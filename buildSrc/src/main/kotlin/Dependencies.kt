@@ -106,7 +106,7 @@ object Lib {
   }
 
   object STREAM {
-    private const val STREAM_CHAT_VERSION = "5.5.0"
+    private const val STREAM_CHAT_VERSION = "5.17.0"
     const val STREAM_CHAT_CLIENT = "io.getstream:stream-chat-android-client:$STREAM_CHAT_VERSION"
     const val STREAM_CHAT_COMPOSE =
       "io.getstream:stream-chat-android-compose:$STREAM_CHAT_VERSION"

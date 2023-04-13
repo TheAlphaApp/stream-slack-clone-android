@@ -3,7 +3,6 @@ package io.getstream.slackclone.data.repository
 import com.github.vatbub.randomusers.Generator
 import com.github.vatbub.randomusers.result.RandomUser
 import io.getstream.chat.android.client.ChatClient
-import io.getstream.chat.android.client.call.await
 import io.getstream.chat.android.client.models.User
 import io.getstream.slackclone.common.injection.dispatcher.CoroutineDispatcherProvider
 import io.getstream.slackclone.data.mapper.EntityMapper
@@ -51,6 +50,6 @@ class SlackUserRepository @Inject constructor(
   }
 
   override suspend fun logout() {
-    chatClient.disconnect()
+    chatClient.disconnect(true).await()
   }
 }
