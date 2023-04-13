@@ -3,7 +3,7 @@ import Lib.Networking
 /** This file contains versions of all the dependencies used in the module  */
 
 object BuildPlugins {
-  const val TOOLS_BUILD_GRADLE = "com.android.tools.build:gradle:7.2.0"
+  const val TOOLS_BUILD_GRADLE = "com.android.tools.build:gradle:7.4.2"
   const val DAGGER_HILT_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:2.40.5"
   const val KOTLIN_GRADLE_PLUGIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21"
   const val ANDROID_APPLICATION_PLUGIN = "com.android.application"
